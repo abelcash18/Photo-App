@@ -28,7 +28,7 @@ footer {
   color: #141414;
   text-align: center;
   padding: 1.5em ;
-   bottom: -100;
+  bottom: -100;
   margin-top: 39em;
   font-size: 1em;
 }
@@ -94,11 +94,26 @@ html {
 .container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
+@media (max-width: 900px) {
+  .grid-parent {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    height: auto;
+    gap: 30px;
+  }
+  .grid-child img {
+    width: 100%;
+    height: 250px;
+  }
+  body{
+    padding: 20px;
+    background-color: antiquewhite;
+  }
+}
 
-@media (max-width: 430px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 1.5em;
     text-align: center;
@@ -111,51 +126,83 @@ html {
     padding: 10px;
     background-color: royalblue;
   }
-    .grid-parent {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-    }
-       .search input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    .btn {
-        width: 100%;
-        margin-left: 0;
-    }
-       
-    .search {
-        margin-top: 20px;
-    }
-    .search input {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-       .grid-child {
-        width: 100%;
-    }
-    .grid-child img {
-        width: 100%;
-        height: 390px;
-    }
-    .btn {
-        width: 50%;
-        height: 50px;
-        margin-top: 10px;
-    }
-    footer {
-        font-size: 0.8em;
-        padding: 1em;
-        margin-top: 12900px;
-    }
-    .welcome {
-        font-size: 1.5em;
-        margin-top: 20px;
-    }
-       .grid-parent {
-        grid-template-columns: 1fr;
-        gap: 90px;
-       }
-    
+  .container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .search {
+    margin-top: 20px;
+  }
+  .search input {
+    width: 90%;
+    margin: 0 auto 20px auto;
+    display: block;
+    height: 30px;
+  }
+  .btn {
+    width: 40%;
+    margin-left: 0;
+    margin-top: 10px;
+    height: 45px;
+  }
+  .welcome {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  .grid-parent {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    height: auto;
+  }
+  .grid-child {
+    width: 100%;
+  }
+  .grid-child img {
+    width: 100%;
+    height: 200px;
+  }
+  footer {
+    font-size: 0.8em;
+    padding: 100em;
+    margin-top: 2em;
+  }
+}
+@media (max-width: 400px) {
+  .search input {
+    width: 100%;
+  }
+  body{
+    padding: 5px;
+    background-color: rgb(128, 20, 104);
+  }
+  .btn {
+    width: 30%;
+    height: 50px;
+  }
+  footer {
+    font-size: 0.7em;
+    padding: 102em;
+    margin-top: 1em;
+  }
+}
+@media (max-width: 300px) {
+  h1 {
+    font-size: 1.2em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  body{
+    padding: 5px;
+    background-color: rgb(8, 153, 68);
+  }
+  .search input {
+    width: 100%;
+    height: 25px;
+  }
+  .btn {
+    width: 30%;
+    height: 40px;
+    font-size: 0.8em;
+  }
 }
