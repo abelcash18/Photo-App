@@ -98,7 +98,7 @@ html {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   h1 {
     font-size: 1.5em;
     text-align: center;
@@ -146,7 +146,7 @@ html {
     footer {
         font-size: 0.8em;
         padding: 1em;
-        margin-top: -290px;
+        margin-top: 2900px;
     }
     .welcome {
         font-size: 1.5em;
